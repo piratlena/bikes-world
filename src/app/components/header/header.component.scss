@@ -5,6 +5,9 @@ header {
   height: 105px;
   z-index: 2;
 }
+.scrolled {
+  background: #2e2e2e;
+}
 
 .header {
   &__fixed {

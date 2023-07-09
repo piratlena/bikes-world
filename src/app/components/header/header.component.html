@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="header__fixed">
+  <div class="header__fixed" [ngClass]="{ scrolled: isScrolled }">
     <div class="container header__content">
       <a href="#" class="header__logo">
         <img src="../../../assets/main-logo.svg" alt="logo" />

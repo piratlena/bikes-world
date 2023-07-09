@@ -1,0 +1,79 @@
+@import "../../../styles.scss";
+
+header {
+  position: relative;
+  height: 105px;
+  z-index: 2;
+}
+
+.header {
+  &__fixed {
+    position: fixed;
+    width: 100%;
+    padding-top: 28px;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: block;
+    height: 49px;
+
+    img {
+      display: block;
+      height: 100%;
+    }
+  }
+}
+.nav {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__item {
+    margin-right: 2rem;
+  }
+  &__link {
+    color: $text-color;
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+  :last-child {
+    margin-right: 0;
+  }
+}
+
+.tools {
+  &__list {
+    display: flex;
+  }
+  &__item {
+    margin-right: 1.8rem;
+    cursor: pointer;
+  }
+}
+
+.material-icons.md-light {
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+}
+.humburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 1.5rem;
+  width: 2rem;
+  cursor: pointer;
+  span {
+    height: 1px;
+    width: 24px;
+    background: $text-color;
+  }
+  :first-child {
+    width: 2rem;
+  }
+}

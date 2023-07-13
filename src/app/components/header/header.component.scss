@@ -2,8 +2,7 @@
 
 header {
   position: relative;
-  height: 105px;
-  z-index: 2;
+  min-height: 105px;
 }
 .scrolled {
   background: #2e2e2e;
@@ -13,7 +12,9 @@ header {
   &__fixed {
     position: fixed;
     width: 100%;
-    padding-top: 28px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    z-index: 3;
   }
   &__content {
     display: flex;

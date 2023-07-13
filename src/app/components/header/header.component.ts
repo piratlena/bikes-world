@@ -8,9 +8,7 @@ import { Component, Renderer2 } from '@angular/core';
 export class HeaderComponent {
   listener;
   isScrolled: boolean = false;
-  getYPosition(e: Event): number {
-    return (e.target as Element).scrollTop;
-  }
+
   constructor(private renderer2: Renderer2) {
     this.listener = this.renderer2.listen('window', 'scroll', (e) => {
       if (window.scrollY > 0) {

@@ -1,7 +1,14 @@
 $text-color: #fff;
+$text-color-grey: #abb8c3;
 $dark-grey: #101010;
+$dark-grey-2: #131313;
 $light-grey: #2e2e2e;
+$orange: #f57520;
+$orange-hover: #f57f2a;
+$orange-pressed: #e1610c;
+$color-black: #000;
 
+$default-font-size: 1rem;
 html {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -24,9 +31,21 @@ a {
 }
 
 .container {
-  max-width: 1280px;
+  width: 1280px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }

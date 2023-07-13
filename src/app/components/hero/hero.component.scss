@@ -1,6 +1,7 @@
 .hero {
   min-height: 875px;
-  background: url("../../../assets/main-screen/bikes-slider-1-bg.jpg");
-  transform: translateY(-106px);
+  width: 100%;
+  background-image: url("../../../assets/main-screen/bikes-slider-1-bg.jpg");
+  top: 105px;
   z-index: 1;
 }

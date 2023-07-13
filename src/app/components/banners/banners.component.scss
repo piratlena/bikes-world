@@ -1,0 +1,53 @@
+@import "../../../styles.scss";
+
+.banner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  color: $text-color;
+  font-size: 1.5rem;
+  font-weight: 500;
+  &--first {
+    background-color: $dark-grey;
+    padding: 0 2.5rem 4rem 2.5rem;
+    text-align: right;
+    transition: all 0.2s;
+    h3 {
+      display: inline-block;
+      width: 293px;
+      cursor: pointer;
+    }
+  }
+
+  &--second {
+    background-color: $dark-grey-2;
+    padding: 0 2.5rem 4rem 2.5rem;
+    transition: all 0.2s;
+    h3 {
+      display: inline-block;
+      width: 277px;
+      cursor: pointer;
+    }
+  }
+  &--third {
+    background-color: $light-grey;
+    padding: 0 2.5rem 4rem 2.5rem;
+    transition: all 0.2s;
+    h3 {
+      display: inline-block;
+      width: 326px;
+      cursor: pointer;
+    }
+  }
+  &--first:hover,
+  &--second:hover,
+  &--third:hover {
+    transform: scale(1.05) translateY(-0.5rem);
+    border-radius: 6px;
+  }
+  &__link {
+    display: block;
+    color: $orange;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+}

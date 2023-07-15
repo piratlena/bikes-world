@@ -3,6 +3,7 @@ $text-color-grey: #abb8c3;
 $dark-grey: #101010;
 $dark-grey-2: #131313;
 $light-grey: #2e2e2e;
+$light-grey-2: #777;
 $orange: #f57520;
 $orange-hover: #f57f2a;
 $orange-pressed: #e1610c;
@@ -48,4 +49,13 @@ a {
     opacity: 1;
     transform: translate(0);
   }
+}
+h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 123%; /* 78.72px */
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
 }

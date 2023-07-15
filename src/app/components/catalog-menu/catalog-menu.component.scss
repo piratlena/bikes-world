@@ -1,0 +1,121 @@
+@import "../../../styles.scss";
+
+.catalog {
+  width: 1200;
+  background: $text-color;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+
+    gap: 15px;
+    .vertical {
+      grid-row: 2 / span 3;
+    }
+    .horizontal {
+      grid-column: 1 / span 3;
+    }
+    h2 {
+      color: $text-color;
+      font-size: 3rem;
+      font-family: "Roboto Condensed", sans-serif;
+      text-transform: uppercase;
+      margin-right: 3rem;
+      margin: 0;
+    }
+  }
+  &__item-1 {
+    background-color: $orange;
+    display: flex;
+    border-radius: 10px;
+    padding-left: 10px;
+
+    h2 {
+      margin-top: 100px;
+    }
+
+    &-image {
+      position: relative;
+      max-width: 800px;
+
+      img {
+        display: block;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+  &__item-2 {
+    background: $dark-grey;
+    border-radius: 10px;
+    padding-top: 80px;
+    position: relative;
+    text-align: center;
+
+    img {
+      display: block;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+  }
+  &__item-3 {
+    padding: 67px 0px 0px 67px;
+
+    background: $dark-grey;
+    border-radius: 10px;
+    position: relative;
+
+    img {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &__item-4 {
+    padding-top: 40px;
+    background: $dark-grey;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+
+    img {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &__item-5 {
+    background: $dark-grey;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    padding-top: 200px;
+    h2 {
+      bottom: 0;
+    }
+
+    img {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  &__item-6 {
+    padding: 67px 0px 0px 67px;
+
+    background: $dark-grey;
+    border-radius: 10px;
+    position: relative;
+
+    img {
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

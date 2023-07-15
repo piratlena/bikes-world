@@ -1,0 +1,10 @@
+@import "../../../styles.scss";
+
+.new {
+  width: 100%;
+  min-height: 806px;
+  &__card-list {
+    display: flex;
+    align-items: center;
+  }
+}

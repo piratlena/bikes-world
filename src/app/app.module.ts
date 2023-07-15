@@ -11,6 +11,10 @@ import { ButtonComponent } from './components/ui/button/button.component';
 import { SwiperDirectiveDirective } from './directives/swiper-directive.directive';
 import { BannersComponent } from './components/banners/banners.component';
 import { CompanyLogoComponent } from './components/company-logo/company-logo.component';
+import { NewComponent } from './components/new/new.component';
+import { CardComponent } from './components/card/card.component';
+import { CardDirectiveDirective } from './directives/card-directive.directive';
+import { CatalogMenuComponent } from './components/catalog-menu/catalog-menu.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +26,10 @@ import { CompanyLogoComponent } from './components/company-logo/company-logo.com
     SwiperDirectiveDirective,
     BannersComponent,
     CompanyLogoComponent,
+    NewComponent,
+    CardComponent,
+    CardDirectiveDirective,
+    CatalogMenuComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

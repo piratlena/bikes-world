@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card__flag">
+    <img src="{{ product.imgFlag }}" alt="" class="card__flag-img" />
+  </div>
+  <img src="{{ product.imgProduct }}" alt="bike" class="card__photo" />
+  <div class="card__title">{{ product.title }}</div>
+  <div class="card__price">
+    {{ product.price | currency : "RUB" : "symbol-narrow" : "1.0-0" }}
+  </div>
+  <!-- <div class="card__footer">
+    <app-button></app-button>
+  </div> -->
+</div>

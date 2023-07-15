@@ -1,0 +1,66 @@
+@import "../../../styles.scss";
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 400px;
+  height: 443px;
+  background-color: $text-color;
+  border-radius: 8px;
+  margin-right: 40px;
+  padding: 18px 16px 20px 16px;
+  transition: transform 0.3s;
+  cursor: pointer;
+
+  &__flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+    img {
+      display: block;
+      width: 100%;
+      border-top-left-radius: 8px;
+    }
+  }
+  &__photo {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  &__title {
+    display: inline-block;
+    height: 58px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+  }
+  &__price {
+    font-weight: 500;
+    color: $light-grey-2;
+  }
+  // &__footer {
+  //   opacity: 0;
+  //   background-color: #fff;
+  //   padding: 2rem;
+  //   position: absolute;
+  //   left: 0;
+  //   bottom: 0;
+  //   right: 0;
+  //   max-height: 100%;
+  //   transform: translateY(0);
+  //   overflow-y: auto;
+  //   transition: transform 0.3s ease-in;
+
+  //   &:hover {
+  //     opacity: 1;
+  //     transform: translateY(101%);
+  //   }
+  // }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+}

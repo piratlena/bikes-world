@@ -10,6 +10,12 @@ $orange-pressed: #e1610c;
 $color-black: #000;
 
 $default-font-size: 1rem;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 html {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -58,4 +64,5 @@ h2 {
   line-height: 123%; /* 78.72px */
   letter-spacing: 3.2px;
   text-transform: uppercase;
+  margin: 0;
 }

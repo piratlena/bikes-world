@@ -15,6 +15,8 @@ import { NewComponent } from './components/new/new.component';
 import { CardComponent } from './components/card/card.component';
 import { CardDirectiveDirective } from './directives/card-directive.directive';
 import { CatalogMenuComponent } from './components/catalog-menu/catalog-menu.component';
+import { PlayerComponent } from './components/player/player.component';
+import { LogInComponent } from './components/user/log-in/log-in.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,8 @@ import { CatalogMenuComponent } from './components/catalog-menu/catalog-menu.com
     CardComponent,
     CardDirectiveDirective,
     CatalogMenuComponent,
+    PlayerComponent,
+    LogInComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

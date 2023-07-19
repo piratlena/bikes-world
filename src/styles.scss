@@ -1,9 +1,11 @@
 $text-color: #fff;
 $text-color-grey: #abb8c3;
+$bg-color: #f8f8f8;
 $dark-grey: #101010;
 $dark-grey-2: #131313;
 $light-grey: #2e2e2e;
 $light-grey-2: #777;
+$light-grey-3: #4c4c4c;
 $orange: #f57520;
 $orange-hover: #f57f2a;
 $orange-pressed: #e1610c;
@@ -24,7 +26,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: #f8f8f8;
+  background: $bg-color;
   font-family: "Intro", sans-serif;
   font-size: 16px;
 }

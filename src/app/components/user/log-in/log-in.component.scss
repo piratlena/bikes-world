@@ -1,0 +1,85 @@
+@import "../../../../styles.scss";
+
+.login {
+  width: 448px;
+  height: 1080px;
+  padding: 96px 40px 0 40px;
+  position: fixed;
+  background: $text-color;
+  top: 0;
+  right: 0;
+  background-color: $text-color;
+  &__heading {
+    width: 238px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+  span {
+    color: $light-grey;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  &__form {
+  }
+  &__footer {
+    margin-top: 3rem;
+  }
+}
+.active {
+  font-size: 1.8rem;
+  color: $dark-grey;
+  font-weight: 500;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $light-grey-3;
+    line-height: 1.8rem;
+  }
+  input {
+    outline: none;
+    background-color: $bg-color;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    border: none;
+    padding: 0.6rem;
+  }
+}
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 1rem;
+  label {
+    font-size: 0.8rem;
+    color: $light-grey-3;
+    margin-right: 5px;
+  }
+  input {
+    transform: translateY(2.5px);
+  }
+  span {
+    font-size: 0.8rem;
+    color: $dark-grey;
+    font-weight: 700;
+  }
+}
+.navigation__button {
+  background-color: $text-color;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
+  text-align: center;
+  cursor: pointer;
+}

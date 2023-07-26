@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { register } from 'swiper/element/bundle';
+import { UserModule } from './components/user/user.module';
+import { SharedModule } from './shared/shared.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { SlidesComponent } from './components/slides/slides.component';
-import { ButtonComponent } from './components/ui/button/button.component';
+
 import { SwiperDirectiveDirective } from './directives/swiper-directive.directive';
 import { BannersComponent } from './components/banners/banners.component';
 import { CompanyLogoComponent } from './components/company-logo/company-logo.component';
@@ -16,7 +17,8 @@ import { CardComponent } from './components/card/card.component';
 import { CardDirectiveDirective } from './directives/card-directive.directive';
 import { CatalogMenuComponent } from './components/catalog-menu/catalog-menu.component';
 import { PlayerComponent } from './components/player/player.component';
-import { LogInComponent } from './components/user/log-in/log-in.component';
+
+import { InputComponent } from './shared/input/input.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,6 @@ import { LogInComponent } from './components/user/log-in/log-in.component';
     HeaderComponent,
     HeroComponent,
     SlidesComponent,
-    ButtonComponent,
     SwiperDirectiveDirective,
     BannersComponent,
     CompanyLogoComponent,
@@ -33,9 +34,10 @@ import { LogInComponent } from './components/user/log-in/log-in.component';
     CardDirectiveDirective,
     CatalogMenuComponent,
     PlayerComponent,
-    LogInComponent,
+
+    InputComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, UserModule, SharedModule],
   providers: [],
   bootstrap: [AppComponent],
 })

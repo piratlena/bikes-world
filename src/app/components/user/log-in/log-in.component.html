@@ -1,28 +1,30 @@
-<div class="login">
-  <div class="close"></div>
-  <div class="login__heading">
-    <span class="active">Войти</span>
-    <span>Регистрация</span>
-  </div>
-  <form action="" class="login__form">
-    <div class="form-group">
-      <label for="email">Имя пользователя</label>
-      <input type="text" id="email" />
+<app-navigation>
+  <div class="login">
+    <div class="login__close" (click)="toggleNav()"></div>
+    <div class="login__heading">
+      <span class="active">Войти</span>
+      <span>Регистрация</span>
     </div>
-    <div class="form-group">
-      <label for="password">Пароль</label>
-      <input type="text" id="password" />
-    </div>
-    <div class="login__footer">
-      <app-button text="Войти" class="login__btn"></app-button>
-      <div class="checkbox">
-        <div>
-          <label for="checkbox">Запомнить меня</label>
-          <input type="checkbox" id="password" />
-        </div>
-
-        <span>Забыли пароль?</span>
+    <form action="" class="login__form">
+      <div class="form-group">
+        <label for="email">Имя пользователя</label>
+        <input type="text" id="email" />
       </div>
-    </div>
-  </form>
-</div>
+      <div class="form-group">
+        <label for="password">Пароль</label>
+        <input type="text" id="password" />
+      </div>
+      <div class="login__footer">
+        <app-button text="Войти" class="login__btn"></app-button>
+        <div class="checkbox">
+          <div>
+            <label for="checkbox">Запомнить меня</label>
+            <input type="checkbox" id="password" />
+          </div>
+
+          <span>Забыли пароль?</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</app-navigation>

@@ -1,14 +1,6 @@
 @import "../../../../styles.scss";
 
 .login {
-  width: 448px;
-  height: 1080px;
-  padding: 96px 40px 0 40px;
-  position: fixed;
-  background: $text-color;
-  top: 0;
-  right: 0;
-  background-color: $text-color;
   &__heading {
     width: 238px;
     display: flex;
@@ -82,4 +74,21 @@
   box-shadow: 0 1rem 3rem rgba($color-black, 0.1);
   text-align: center;
   cursor: pointer;
+}
+
+.navigation__icon {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+  }
+
+  &::before {
+    top: -0.8rem;
+  }
+  &::after {
+    top: 0.8rem;
+  }
 }

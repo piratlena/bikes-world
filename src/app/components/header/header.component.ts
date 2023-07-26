@@ -1,4 +1,5 @@
 import { Component, Renderer2 } from '@angular/core';
+import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,10 @@ export class HeaderComponent {
   listener;
   isScrolled: boolean = false;
 
-  constructor(private renderer2: Renderer2) {
+  constructor(
+    private renderer2: Renderer2,
+    private navigation: NavigationService
+  ) {
     this.listener = this.renderer2.listen('window', 'scroll', (e) => {
       if (window.scrollY > 0) {
         this.isScrolled = true;
@@ -17,5 +21,8 @@ export class HeaderComponent {
         this.isScrolled = false;
       }
     });
+  }
+  openNav() {
+    this.navigation.toggleOpen();
   }
 }

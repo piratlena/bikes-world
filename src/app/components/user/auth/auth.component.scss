@@ -1,27 +1,11 @@
 @import "../../../../styles.scss";
 
 .login {
-  &__heading {
-    width: 238px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-  }
-  span {
-    color: $light-grey;
-    font-size: 1.1rem;
-    cursor: pointer;
-  }
   &__form {
   }
   &__footer {
     margin-top: 3rem;
   }
-}
-.active {
-  font-size: 1.8rem;
-  color: $dark-grey;
-  font-weight: 500;
 }
 
 .form-group {

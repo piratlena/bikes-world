@@ -1,4 +1,4 @@
-<div class="navigation" [ngClass]="{ open: modal.isOpen() }">
+<div class="navigation" [ngClass]="{ open: nav.isOpen(navId) }">
   <div class="navigation__close" (click)="closeNav()"></div>
   <ng-content></ng-content>
 </div>

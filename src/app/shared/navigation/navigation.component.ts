@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { NavigationService } from 'src/app/services/navigation.service';
 
 @Component({
@@ -7,10 +7,11 @@ import { NavigationService } from 'src/app/services/navigation.service';
   styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent implements OnInit {
-  constructor(public modal: NavigationService) {}
+  @Input() navId = '';
+  constructor(public nav: NavigationService) {}
 
   closeNav() {
-    this.modal.toggleOpen();
+    this.nav.toggleOpen(this.navId);
   }
   ngOnInit(): void {}
 }

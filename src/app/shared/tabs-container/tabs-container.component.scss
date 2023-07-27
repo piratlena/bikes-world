@@ -1,0 +1,22 @@
+@import "../../../styles.scss";
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  &__item {
+    &:first-child {
+      margin-right: 2rem;
+    }
+  }
+  &__link {
+    color: $light-grey-2;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  .active {
+    font-size: 1.1rem;
+    color: $orange;
+    font-weight: 700;
+  }
+}

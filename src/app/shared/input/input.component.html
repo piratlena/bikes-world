@@ -1,1 +1,30 @@
-<p>input works!</p>
+<input
+  type="text"
+  id="name"
+  [formControl]="control"
+  [mask]="format"
+  [dropSpecialCharacters]="false"
+  [showMaskTyped]="true"
+  prefix="+7"
+/>
+<ng-container *ngIf="control.touched && control.dirty">
+  <p *ngIf="control.errors?.['required']" class="error">
+    *Обязательно для заполнения
+  </p>
+  <p *ngIf="control.errors?.['minlength']" class="error">
+    Введенное количество количество символов
+    {{control.errors?.['minlength']['actualLength']}}. Минимальная длина должна
+    составлять
+    {{control.errors?.['minlength']['requiredLength']}}
+    символов.
+  </p>
+  <p *ngIf="control.errors?.['email']" class="error">
+    Введен некорректный email.
+  </p>
+  <p *ngIf="control.errors?.['min']" class="text-red-400">
+    Зарегистрироваться можно только с 18 лет
+  </p>
+  <p *ngIf="control.errors?.['max']" class="text-red-400">
+    Указан некорректный возраст
+  </p>
+</ng-container>

@@ -9,6 +9,7 @@ interface INavigation {
 })
 export class NavigationService {
   private navigation: INavigation[] = [];
+  constructor() {}
 
   register(id: string) {
     this.navigation.push({
@@ -31,6 +32,4 @@ export class NavigationService {
       nav.open = !nav.open;
     }
   }
-
-  constructor() {}
 }

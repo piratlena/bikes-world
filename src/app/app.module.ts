@@ -18,8 +18,6 @@ import { CardDirectiveDirective } from './directives/card-directive.directive';
 import { CatalogMenuComponent } from './components/catalog-menu/catalog-menu.component';
 import { PlayerComponent } from './components/player/player.component';
 
-import { InputComponent } from './shared/input/input.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,8 +32,6 @@ import { InputComponent } from './shared/input/input.component';
     CardDirectiveDirective,
     CatalogMenuComponent,
     PlayerComponent,
-
-    InputComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, UserModule, SharedModule],
   providers: [],

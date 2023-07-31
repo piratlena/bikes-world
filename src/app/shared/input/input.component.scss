@@ -1,0 +1,13 @@
+@import "../../../styles.scss";
+
+input {
+  outline: none;
+  background-color: $bg-color;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  border: none;
+  padding: 0.6rem;
+}
+.error {
+  color: rgb(199, 54, 54);
+}

@@ -1,55 +1,11 @@
 <app-navigation navId="auth">
   <app-tabs-container>
     <app-tab tabTitle="Login">
-      <div class="login">
-        <form action="" class="login__form">
-          <div class="form-group">
-            <label for="email">Имя пользователя</label>
-            <input type="text" id="email" />
-          </div>
-          <div class="form-group">
-            <label for="password">Пароль</label>
-            <input type="text" id="password" />
-          </div>
-          <div class="login__footer">
-            <app-button text="Войти" class="login__btn"></app-button>
-            <div class="checkbox">
-              <div>
-                <label for="checkbox">Запомнить меня</label>
-                <input type="checkbox" id="password" />
-              </div>
-
-              <span>Забыли пароль?</span>
-            </div>
-          </div>
-        </form>
-      </div>
+      <app-login></app-login>
     </app-tab>
 
     <app-tab tabTitle="Registration">
-      <div class="login">
-        <form action="" class="login__form">
-          <div class="form-group">
-            <label for="email">Имя пользователя</label>
-            <input type="text" id="email" />
-          </div>
-          <div class="form-group">
-            <label for="password">Пароль</label>
-            <input type="text" id="password" />
-          </div>
-          <div class="login__footer">
-            <app-button text="Войти" class="login__btn"></app-button>
-            <div class="checkbox">
-              <div>
-                <label for="checkbox">Запомнить меня</label>
-                <input type="checkbox" id="password" />
-              </div>
-
-              <span>Забыли пароль?</span>
-            </div>
-          </div>
-        </form>
-      </div>
+      <app-register></app-register>
     </app-tab>
   </app-tabs-container>
 </app-navigation>
